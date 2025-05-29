@@ -1,4 +1,4 @@
-# 🧠 Face & Gesture Recognition System
+# 🧠 Face & Gesture Recognition 
 
 A Python-based computer vision project using OpenCV and DeepFace that allows you to:
 - Capture a user's face via webcam
@@ -12,7 +12,7 @@ A Python-based computer vision project using OpenCV and DeepFace that allows you
 
 Install all dependencies using:
 
-pip install opencv-python deepface numpy
+pip install opencv-python deepface mediapipe pyautogui pynumpy
 
 ---
 
