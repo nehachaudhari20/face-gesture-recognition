@@ -1,6 +1,7 @@
 # 🧠 Face & Gesture Recognition System
 
 A Python-based computer vision project using OpenCV and DeepFace that allows you to:
+
 - Capture a user's face via webcam
 - Verify the face against known users
 - Analyze facial attributes (age, gender, emotion, race)
@@ -12,7 +13,7 @@ A Python-based computer vision project using OpenCV and DeepFace that allows you
 
 Install all dependencies using:
 
-pip install opencv-python deepface numpy
+pip install -r requirements.txt
 
 ---
 
@@ -23,10 +24,11 @@ pip install opencv-python deepface numpy
 Captures an image using your webcam and saves it locally.
 
 ### Usage:
+
 python face_capture.py
 
-
 **Controls:**
+
 - Press **'c'** to capture and save the face.
 - Press **'q'** to quit.
 
@@ -39,10 +41,11 @@ python face_capture.py
 Compares the captured image with a list of known faces in the `known_users/` folder.
 
 ### Usage:
+
 python face_verifier.py
 
-
 ### Notes:
+
 - Uses the **Facenet** model and **RetinaFace** detector from `DeepFace`.
 - Ensure `known_users/` exists and contains `.jpg`, `.png`, or `.jpeg` files.
 
@@ -53,14 +56,15 @@ python face_verifier.py
 **File:** `face_analysis.py`
 
 Analyzes the captured face for the following attributes:
+
 - Age
 - Gender
 - Dominant Emotion
 - Dominant Race
 
 ### Usage:
-python face_analysis.py
 
+python face_analysis.py
 
 ---
 
@@ -82,11 +86,3 @@ face-gesture/
 │ └── user2.png
 
 Captured face is saved as `captured_face.jpg` in the main directory.
-
-
-
-
-
-
-
-
